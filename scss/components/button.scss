@@ -1,0 +1,29 @@
+.divBtn {
+    font-size: .9rem;
+    display: inline-block;
+    line-height: 1;
+    width: auto;
+
+    .customBtn {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-flow: row nowrap;
+        font-weight: 500;
+        margin: 6px;
+        padding: 1.1em 1.5em;
+        box-shadow: $bs-1;
+        background: transparent;
+        transition: $transit-1;
+        border-radius: 50px;
+        color: $color-white-3;
+
+        &:hover {
+            @include hover1($color-pink-1, $bs-2);
+        }
+
+        .customBtn_i {
+            padding-right: $pd-9;
+        }
+    }
+}

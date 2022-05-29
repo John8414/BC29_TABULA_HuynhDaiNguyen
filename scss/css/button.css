@@ -1,0 +1,32 @@
+.divBtn {
+  font-size: .9rem;
+  display: inline-block;
+  line-height: 1;
+  width: auto;
+}
+
+.divBtn .customBtn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  font-weight: 500;
+  margin: 6px;
+  padding: 1.1em 1.5em;
+  -webkit-box-shadow: 0 0 0 3em #b61984 inset;
+          box-shadow: 0 0 0 3em #b61984 inset;
+  background: transparent;
+  -webkit-transition: all 300ms ease;
+  transition: all 300ms ease;
+  border-radius: 50px;
+}
+/*# sourceMappingURL=button.css.map */

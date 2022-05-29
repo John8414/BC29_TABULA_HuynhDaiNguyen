@@ -1,0 +1,11 @@
+@mixin styleText($fs, $fw, $color, $lh) {
+    font-size: $fs;
+    font-weight: $fw;
+    color: $color  !important;
+    line-height: $lh;
+}
+
+@mixin hover1 ($color, $bs) {
+    color: $color  !important;
+    box-shadow: $bs;
+}
