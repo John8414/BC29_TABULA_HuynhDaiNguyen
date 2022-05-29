@@ -7,6 +7,8 @@ $color-blue-1: #1d365e;
 $color-blue-2: #2a73dd;
 $color-blue-3: #c9d8f4;
 $color-yellow-1: #f9d412;
+
+//pink
 $color-pink-1: #b61984;
 // $color-pink-1: #b61984;
 
@@ -24,6 +26,8 @@ $fs-1: 13px;
 $fs-4: 70px;
 $fs-7: 20px;
 $fs-8: 44px;
+$fs-9: 57px;
+
 
 //font weight
 $fw-4: 400;
@@ -51,6 +55,8 @@ $mg-2: 25px;
 $mg-3: 70px;
 $mg-4: 60px;
 $mg-5: 12px;
+$mg-6: 8px;
+
 
 
 //border
@@ -78,4 +84,12 @@ $bs-2: 0 0 0 1px $color-pink-1 inset;
 $transit-1: all 300ms ease;
 
 //line-height
+$lh-1: 1.2;
 $lh-8: 80px;
+
+// ***flex
+//justify content
+$jc-1: space-around;
+
+//aligh item
+$ai-1: center

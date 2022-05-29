@@ -9,3 +9,13 @@
     color: $color  !important;
     box-shadow: $bs;
 }
+
+@mixin row($jc, $ai) {
+    justify-content: $jc;
+    align-items: $ai;
+}
+
+@mixin imgFull {
+    max-width: 100%;
+    height: auto;
+}
