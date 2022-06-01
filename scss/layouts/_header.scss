@@ -1,10 +1,12 @@
 header {
     position: absolute;
     width: 100%;
+    z-index: 1;
 
     .header1.container {
         padding: 0 15px !important;
         position: relative;
+        z-index: 2;
 
         .navbar-brand {
             margin: 0;
@@ -17,13 +19,16 @@ header {
 
         .customNav1 {
             justify-content: space-evenly;
+            position: absolute;
+            right: 50%;
+            left: 50%;
 
             .custom_ul1 {
                 .nav-item {
                     padding-right: $pd-4;
 
                     .nav-link {
-                        @include styleText($fs-1, $fw-6, $color-dark-0, $lh-8);
+                        @include styleText($fs-1, $fw-6, $color-dark-1, $lh-8);
                         transition: $transit-1;
                         position: relative;
 
@@ -66,7 +71,7 @@ header {
             right: 80px;
             top: 10px;
             position: absolute;
-            right: 15px;
+            right: 0;
             top: 10px;
 
             .custom_ul2 {

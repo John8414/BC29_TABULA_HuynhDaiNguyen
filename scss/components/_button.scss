@@ -1,10 +1,10 @@
-.divBtn {
+.divBtn1 {
     font-size: .9rem;
     display: inline-block;
     line-height: 1;
     width: auto;
 
-    .customBtn {
+    .customBtn1 {
         display: flex;
         justify-content: center;
         align-items: center;
@@ -24,6 +24,31 @@
 
         .customBtn_i {
             padding-right: $pd-9;
+        }
+    }
+}
+
+.divBtn2 {
+    @extend.divBtn1;
+
+    .customBtn2 {
+        @extend.customBtn1;
+        padding: 1.4em 2.6em;
+    }
+}
+
+.divBtn3 {
+    @extend.divBtn1;
+    width: 100%;
+
+    .customBtn3 {
+        @extend.customBtn1;
+        box-shadow: 0 0 0 3em #fff inset;
+        color: $color-dark-0;
+
+        &:hover {
+            box-shadow: 0 0 0 1px #fff inset;
+            color: #fff !important;
         }
     }
 }
