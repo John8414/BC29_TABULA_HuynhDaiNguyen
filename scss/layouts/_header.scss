@@ -1,7 +1,17 @@
-header {
-    position: absolute;
+.headerBG.header-scroll {
+    top: 0;
+    background-color: white !important;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+
+    .navbar-brand {
+        opacity: 0;
+    }
+}
+
+.headerBG {
+    position: fixed;
+    z-index: 999;
     width: 100%;
-    z-index: 1;
 
     .header1.container {
         padding: 0 15px !important;
@@ -57,7 +67,11 @@ header {
 
                     &:hover {
                         .nav-link {
-                            @include hover1($color-pink-1, none)
+                            @include hover1($color-pink-1, none) &::after {
+                                opacity: 1;
+                                height: 12px;
+                                width: 12px;
+                            }
                         }
                     }
 
