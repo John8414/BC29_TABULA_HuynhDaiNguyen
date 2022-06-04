@@ -384,7 +384,7 @@ html {
   content: "" !important;
   display: block;
   position: absolute;
-  bottom: 5px;
+  bottom: -3rem;
   left: 50%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
@@ -401,8 +401,18 @@ html {
   color: #b61984;
 }
 
-.header__nav .nav-link.active {
+.header__nav .nav-link:hover::after {
+  opacity: 1;
+  height: 12px;
+  width: 12px;
+}
+
+.header__nav .active {
   color: #b61984 !important;
+}
+
+.header__nav .active::after {
+  opacity: 1;
 }
 
 .header__nav .header__contact {
@@ -1004,6 +1014,8 @@ html {
   height: 5rem;
   border-radius: 3rem;
   outline: none;
+  -webkit-transition: all 300ms ease;
+  transition: all 300ms ease;
 }
 
 .footer .footer__content-wrap .footer__item .footer__item-form input::-webkit-input-placeholder {

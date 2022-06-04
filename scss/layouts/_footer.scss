@@ -93,6 +93,8 @@
           border-radius: $br-5;
           outline: none;
 
+          transition: $transit-1;
+
           &::placeholder {
             color: $light;
           }

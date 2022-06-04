@@ -140,7 +140,7 @@
       content: "" !important;
       display: block;
       position: absolute;
-      bottom: 5px;
+      bottom: -3rem;
       left: 50%;
       transform: translateX(-50%);
       height: 8px;
@@ -153,12 +153,23 @@
 
     &:hover {
       color: $pink-1;
-    }
 
+
+      &::after {
+        opacity: 1;
+        height: 12px;
+        width: 12px;
+      }
+
+    }
   }
 
-  .nav-link.active {
+  .active {
     color: $pink-1  !important;
+
+    &::after {
+      opacity: 1;
+    }
   }
 
   .header__contact {
